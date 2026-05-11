@@ -1,5 +1,5 @@
 # AI Text Summarizer
-
+- video explantion link (https://drive.google.com/file/d/1kcjBHvG9Da-kHpuaAcATVwm_f2LdHQxe/view?usp=sharing)
 - This project is a web-based application that summarizes text and PDF using AI.
 - In this project i used pythom FastAPI to create Framework it can handelroutes, request,responses.
 - i used HuggingFase(pre- trained AI model) so basically it is trained NLP model which will convert long text into small summary it uses PyTorch which will handel deep learning computation
