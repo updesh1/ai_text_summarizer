@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Text Summarizer</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>AI Text Summarizer</h1>
+    <p class="subtitle">
+        Summarize long text and PDF documents using AI
+    </p>
+
+    <textarea
+        id="textInput"
+        placeholder="Paste your text here..."
+    ></textarea>
+
+    <div class="counter">
+        Characters: <span id="charCount">0</span>
+    </div>
+
+    <div class="upload-box">
+        <input type="file" id="pdfFile" accept=".pdf">
+    </div>
+
+    <div class="buttons">
+        <button onclick="summarizeText()">
+            Summarize Text
+        </button>
+
+        <button onclick="summarizePDF()">
+            Summarize PDF
+        </button>
+    </div>
+
+    <div id="loader" class="loader hidden">
+        Summarizing...
+    </div>
+
+    <div class="output-card">
+        <h3>Summary</h3>
+        <p id="output">
+            Your summarized text will appear here...
+        </p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
